@@ -1,0 +1,617 @@
+/* imported a font from google */
+@import url("https://fonts.googleapis.com/css2?family=Finlandica&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-size: 16px; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Finlandica", sans-serif;
+  /* display: flex; */
+  /* background-color: rgb(238, 222, 222); */
+  background-color: rgb(238, 202, 189);
+}
+
+.clr {
+  clear: both;
+}
+
+a {
+  color: rgb(238, 92, 92);
+}
+
+a:hover {
+  color: rgb(56, 56, 230);
+}
+
+header {
+  /* linear-gradient for reducing the image opacity, to darken it a bit */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+header nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+header nav .cs50x {
+  /* float: left; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  margin: 0px 20px;
+}
+
+span {
+  font-style: italic;
+  color: coral;
+}
+
+header .cs50x li {
+  text-transform: uppercase;
+  padding-left: 10px;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+header .cs50x li a,
+header .nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .nav ul {
+  /* float: right; */
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  /* margin-top: 15px; */
+}
+
+header .nav li {
+  padding-right: 50px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+/* header ul li.active a {
+  border-radius: 5px;
+  padding: 10px;
+  background: coral;
+  border: none;
+} */
+
+/* Here is the styling attribute called by the javascript for active page, none of the tags on html have this hard-coded by default. We add it to them when they are within that specific page */
+
+.nav a.active {
+  border-radius: 5px;
+  padding: 10px;
+  background: coral;
+  border: none;
+}
+
+.nav li a:hover {
+  background-color: coral;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+
+nav #icon {
+  color: white;
+  font-size: 30px;
+  line-height: 40px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  text-align: center;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header .cs50x li {
+    font-size: 32px;
+    padding-left: 40px;
+  }
+
+  header .nav ul {
+    margin-right: 20px;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #2f3640;
+    top: 60px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  header .nav ul li a {
+    font-size: 20px;
+  }
+
+  nav #icon {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  header .nav ul {
+    display: block;
+  }
+
+  header .nav li {
+    margin: 50px 0px;
+    line-height: 30px;
+  }
+
+  header .nav ul.show {
+    left: 0;
+  }
+}
+
+.btn-container {
+  display: flex;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.mid-sec {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.btn-container p {
+  /* word-wrap: break-word; */
+  text-align: center;
+  text-transform: capitalize;
+  color: coral;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+em {
+  font-style: none;
+  color: white;
+}
+
+.btn {
+  border: 1px solid white;
+  padding: 10px;
+  margin: 0px 0px 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn1 {
+  background-color: red;
+}
+
+.btn2 {
+  border: 1px solid white;
+}
+
+.btn2:hover {
+  background-color: red;
+  transition: 0.5s ease-in-out;
+}
+
+/* End of header section */
+
+.courses-container .courses-header,
+.courses-container .courses-desc {
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.courses-container .courses {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.courses {
+  align-content: center;
+}
+
+.box-container {
+  /* flex: 1, gives all the box-container a uniform size in height and width */
+  flex: 1;
+  /* background-color: #0a51cc; */
+  background-color: coral;
+  color: white;
+  border-radius: 10px;
+  margin: 10px 40px;
+  padding: 10px 50px;
+  /* width: 50%; */
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.box-container h2 {
+  margin: 10px 0px;
+  text-transform: capitalize;
+  color: black;
+}
+
+.box-container p {
+  font-style: italic;
+  font-family: "Finlandica", sans-serif;
+  font-size: 17px;
+}
+
+.box-container:hover {
+  transform: scale(1.1);
+}
+
+/* End of courses section */
+
+.dtl-container {
+  /* align-content: center; */
+  display: flex;
+}
+
+.about-us {
+  border: 1px solid #ffff;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  width: 100%;
+  margin-top: 10px 40px;
+  padding: 10px 50px;
+  /* text-align: center; */
+  float: left;
+  /* font-family: "Finlandica", sans-serif; */
+}
+
+#read-more {
+  padding: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgb(53, 46, 46);
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.about-us h2,
+.lecturers-section h2 {
+  text-transform: capitalize;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+sup {
+  font-weight: bold;
+}
+
+.lecturers {
+  border: 1px solid #ffff;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  width: 100%;
+  justify-content: center;
+  align-items: space-between;
+  margin-top: 10px 40px;
+  padding: 10px 50px;
+  /* display: flex; */
+}
+
+.span-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.main-logo-container {
+  border: 1px solid black;
+}
+
+.about-us .paragraph1 {
+  width: 50%;
+  float: left;
+}
+
+.main-logo {
+  max-width: 200px;
+  float: right;
+  border-radius: 40px;
+}
+
+.lecturers-section img {
+  margin-top: 10px;
+  border: 5px solid rgb(235, 177, 156);
+  border-radius: 100px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.names {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.take-course {
+  margin-top: 40px;
+}
+
+.take-course p {
+  padding-bottom: 10px;
+}
+
+.take-course ul {
+  padding-top: 10px;
+}
+
+.take-course li {
+  padding: 5px;
+}
+
+#test {
+  padding-left: 40px;
+}
+
+#test :nth-child(3) {
+  padding-bottom: 20px;
+}
+
+/* End of the main section */
+
+footer .footer-container {
+  margin-top: 8px;
+  display: flex;
+  background-color: rgb(252, 94, 94);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5 {
+  border-radius: 40px;
+  border-width: 1px;
+  margin: 5px;
+  background-color: rgb(155, 153, 153);
+  width: 30px;
+  height: 30px;
+}
+
+.image1 img,
+.image2 img,
+.image3 img,
+.image4 img,
+.image5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.copyright {
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+/* Mobile optimization of the homepage */
+@media (max-width: 768px) {
+  .btn1,
+  .btn2 {
+    font-size: large;
+  }
+
+  .dtl-container {
+    display: block;
+    width: 100%;
+  }
+
+  .main-logo-container {
+    float: none;
+  }
+
+  .about-us .paragraph1 {
+    float: none;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .take-course {
+    padding-bottom: 20px;
+  }
+
+  footer .footer-container {
+    margin-top: 2px;
+    margin-bottom: 0px;
+  }
+
+  .mid-sec p {
+    font-size: 40px;
+  }
+}
+
+/* Beginning of About Page */
+.btn-container2 {
+  display: flex;
+  text-align: center;
+  margin-top: 200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container2 p {
+  margin: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  color: coral;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 90px;
+}
+
+.content-section {
+  margin: 10px 40px;
+}
+
+.content-section h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.button-ctn {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgb(53, 46, 46);
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.take-courses {
+  margin: 10px 40px;
+}
+
+.take-courses h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+/* Mobile optimization of the about page */
+@media (max-width: 768px) {
+  .button {
+    font-size: 12px;
+  }
+
+  .content-section h2 {
+    font-size: 20px;
+  }
+
+  .mid-sec .para-about {
+    font-size: 80px;
+  }
+}
+
+/* Community page styling */
+.image {
+  max-width: 1000px;
+  height: auto;
+  padding: 10px 0px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.image-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.community-container {
+  margin: 10px;
+}
+
+.image .links {
+  padding-bottom: 10px;
+}
+
+.unordered-lists .links {
+  margin: 5px;
+}
+
+.unordered-lists .ahref {
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 30px;
+  border-style: none;
+  border-radius: 10px;
+  background-color: rgb(53, 46, 46);
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.unordered-lists {
+  margin-left: 20px;
+}
+
+.container-main {
+  display: flex;
+}
+
+.container-main .container1 li {
+  padding: 5px 0px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.container-main .container2 li {
+  padding: 5px 0px;
+  margin-left: 40px;
+  margin-bottom: 5px;
+}
+
+/* optimized version for the communities page */
+
+@media (max-width: 768px) {
+  .image {
+    width: 90vw;
+  }
+
+  .unordered-lists .ahref {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mid-sec .para-communities {
+    font-size: 60px;
+  }
+}
