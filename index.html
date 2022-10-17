@@ -5,13 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script defer src="index.js"></script>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-    <!-- Font Awesome Icons library -->
-    <link
-      rel="stylesheet"
-      href="./Font Awesome Icons/font-awesome-4.7.0/css/font-awesome.min.css"
-    />
     <!-- End of Font Awesome Icons Library -->
 
     <!-- Font Awesome 5 import -->
@@ -20,17 +14,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- Font Awesome 5 end -->
-
-    <!-- Jquery Imortation -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <!-- End of importation -->
-    <script>
-      $(document).ready(function () {
-        $("#icon").click(function () {
-          $("header .nav ul").toggleClass("show");
-        });
-      });
-    </script>
     <title>Home</title>
   </head>
 
@@ -39,19 +22,17 @@
       <nav>
         <ul class="cs50x">
           <li>
-            <a href="index.html">cs50<span>X</span></a>
+            <a href="index.html" class="cs50">cs50<span>X</span></a>
           </li>
         </ul>
         <nav class="nav">
           <ul class="show">
             <li class="active">
-              <a href="index.html" class="fa fa-home"> Home</a>
+              <a href="index.html"> Home</a>
             </li>
-            <li><a href="about.html" class="fa fa-book"> About</a></li>
+            <li><a href="about.html"> About</a></li>
             <li>
-              <a href="community.html" class="fa fa-universal-access">
-                Community</a
-              >
+              <a href="community.html"> Community</a>
             </li>
           </ul>
           <label id="icon">
@@ -90,7 +71,7 @@
         </h2>
         <p class="courses-desc">what the course has to offer</p>
         <div class="courses">
-          <div class="box-container">
+          <div class="box-container zero">
             <h2>Week 0 - Scratch</h2>
             <p>
               Scratch is a high-level block-based visual programming language
@@ -99,7 +80,7 @@
             </p>
           </div>
 
-          <div class="box-container">
+          <div class="box-container one">
             <h2>Week 1 - C</h2>
             <p>
               C is a general-purpose computer programming language. It was
@@ -108,7 +89,7 @@
             </p>
           </div>
 
-          <div class="box-container">
+          <div class="box-container two">
             <h2>Week 2 - Arrays</h2>
             <p>
               An array data structure, or simply an array, is a data structure
@@ -117,15 +98,23 @@
             </p>
           </div>
 
-          <div class="box-container">
+          <div class="box-container three">
             <h2>Week 3 - Algorithms</h2>
             <p>
               An algorithm is a specific procedure for solving a well-defined
               computational problem.
             </p>
+            <br />
+            <p>
+              Algorithms can be expressed as natural languages, programming
+              languages, pseudocode, flowcharts and control tables. Natural
+              language expressions are rare, as they are more ambiguous.
+              Programming languages are normally used for expressing algorithms
+              executed by a computer.
+            </p>
           </div>
 
-          <div class="box-container">
+          <div class="box-container four">
             <h2>Week 4 - Memory</h2>
             <p>
               Memory is the electronic holding place for the instructions and
@@ -133,7 +122,7 @@
             </p>
           </div>
 
-          <div class="box-container">
+          <div class="box-container five">
             <h2>Week 5 - Data Structures</h2>
             <p>
               Data structures are more complex ways to organize data in memory,
@@ -141,7 +130,7 @@
             </p>
           </div>
 
-          <div class="box-container">
+          <div class="box-container six">
             <h2>Week 6 - Python</h2>
             <p>
               Python is a high-level, interpreted, general-purpose programming
@@ -150,7 +139,7 @@
             </p>
           </div>
 
-          <div class="box-container">
+          <div class="box-container seven">
             <h2>Week 7 - SQL</h2>
             <p>
               SQL is a domain-specific language used in programming and designed
@@ -158,7 +147,7 @@
             </p>
           </div>
 
-          <div class="box-container">
+          <div class="box-container eight">
             <h2>Week 8 - HTML/CSS and JAVASCRIPT</h2>
             <p>
               Web development is the work involved in developing a website for
@@ -166,17 +155,14 @@
             </p>
           </div>
 
-          <div class="box-container">
-            <h2>Week 9 - Flask</h2>
+          <div class="box-container nine">
+            <h2>Week 9/10 - Flask/Emoji</h2>
             <p>
               Flask is a micro web framework written in Python. It is classified
               as a microframework because it does not require particular tools
               or libraries.
             </p>
-          </div>
-
-          <div class="box-container">
-            <h2>Week 10 - Emoji</h2>
+            <br />
             <p>How Emoji's are represented in ASCII Values / Final Project</p>
           </div>
         </div>
@@ -310,10 +296,11 @@
                 <a
                   href="https://summer.harvard.edu/academic-opportunities-support/policies-and-regulations/academic-policies/transfer-credit-accreditation/"
                   target="_blank"
-                  >transfer credit and accreditation</a
+                >
+                  transfer credit and accreditation</a
                 >from
-                <a href="https://www.summer.harvard.edu/"
-                  >Harvard Summer School</a
+                <a href="https://www.summer.harvard.edu/">
+                  Harvard Summer School</a
                 >, register at
                 <a
                   href="https://web.dce.harvard.edu/summer/csci/s/50"
@@ -326,52 +313,60 @@
           </div>
         </aside>
 
-        <aside class="lecturers">
-          <div class="lecturers-section">
-            <h2>Lecturers</h2>
-            <img src="./images/david malan.png" alt="David Malan" />
-            <div class="text-container">
-              <p class="names">David Malan</p>
-              <br />
-              <p>
-                David J. Malan is Gordon McKay Professor of the Practice of
-                Computer Science at Harvard University in the School of
-                Engineering and Applied Sciences as well as a Member of the
-                Faculty of Education in the Graduate School of Education and an
-                Executive Fellow at Harvard Business School. He teaches Computer
-                Science 50, otherwise known as CS50, which is among Harvard
-                University’s largest courses, one of Yale University’s largest
-                courses, and edX’s largest MOOC. He also teaches at Harvard
-                Business School, Harvard Law School, Harvard Extension School,
-                and Harvard Summer School..
-              </p>
+        <aside>
+          <h2>Lecturers</h2>
+          <div class="lecturers">
+            <div class="lecturers-section t1">
+              <div class="hd">
+                <img src="./images/david malan.png" alt="David Malan" />
+                <p class="names">David Malan</p>
+              </div>
+              <div class="text-container">
+                <p>
+                  "David J. Malan is Gordon McKay Professor of the Practice of
+                  Computer Science at Harvard University in the School of
+                  Engineering and Applied Sciences as well as a Member of the
+                  Faculty of Education in the Graduate School of Education and
+                  an Executive Fellow at Harvard Business School."
+                </p>
+                <br />
+                <p>
+                  "He teaches Computer Science 50, otherwise known as CS50,
+                  which is among Harvard University’s largest courses, one of
+                  Yale University’s largest courses, and edX’s largest MOOC. He
+                  also teaches at Harvard Business School, Harvard Law School,
+                  Harvard Extension School, and Harvard Summer School.."
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="lecturers-section">
-            <img src="./images/doug lloyd.png" alt="Doug Lloyd" />
-            <div class="text-container">
-              <p class="names">Doug Lloyd</p>
-              <br />
-              <p>
-                Doug is a Senior Preceptor in Computer Science in the Division
-                of Continuing Education at Harvard University. He received his
-                A.B. in Computer Science from Harvard in 2009.
-              </p>
+            <div class="lecturers-section t2">
+              <div class="hd">
+                <img src="./images/doug lloyd.png" alt="Doug Lloyd" />
+                <p class="names">Doug Lloyd</p>
+              </div>
+              <div class="text-container">
+                <p>
+                  "Doug is a Senior Preceptor in Computer Science in the
+                  Division of Continuing Education at Harvard University. He
+                  received his A.B. in Computer Science from Harvard in 2009."
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div class="lecturers-section">
-            <!-- edit brian image back -->
-            <img src="./images/brian yu.png" alt="Brian Yu" />
-            <div class="text-contaianer">
-              <p class="names">Brian Yu</p>
-              <br />
-              <p>
-                Brian is a Senior Preceptor in Computer Science in the Division
-                of Continuing Education at Harvard University. He received his
-                A.B. in Computer Science and Linguistics from Harvard in 2019.
-              </p>
+            <div class="lecturers-section t3">
+              <div class="hd">
+                <img src="./images/brian yu.png" alt="Brian Yu" />
+                <p class="names">Brian Yu</p>
+              </div>
+              <div class="text-container">
+                <p>
+                  "Brian is a Senior Preceptor in Computer Science in the
+                  Division of Continuing Education at Harvard University. He
+                  received his A.B. in Computer Science and Linguistics from
+                  Harvard in 2019."
+                </p>
+              </div>
             </div>
           </div>
         </aside>
@@ -416,5 +411,6 @@
         </div>
       </footer>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

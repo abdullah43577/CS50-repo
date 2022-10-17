@@ -4,14 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <script defer src="index.js"></script>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-    <!-- Font Awesome library importation -->
-    <link
-      rel="stylesheet"
-      href="./Font Awesome Icons/font-awesome-4.7.0/css/font-awesome.min.css"
-    />
-    <!-- End of Font Awesome library importation -->
 
     <!-- Font Awesome 5 import -->
     <script
@@ -19,17 +12,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- Font Awesome 5 end -->
-
-    <!-- Jquery Imortation -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <!-- End of importation -->
-    <script>
-      $(document).ready(function () {
-        $("#icon").click(function () {
-          $("header .nav ul").toggleClass("show");
-        });
-      });
-    </script>
     <title>Community</title>
   </head>
   <body>
@@ -38,20 +20,18 @@
       <nav>
         <ul class="cs50x">
           <li>
-            <a href="index.html">cs50<span>X</span></a>
+            <a href="index.html" class="cs50">cs50<span>X</span></a>
           </li>
         </ul>
         <!-- </div> -->
         <nav class="nav">
           <ul>
             <li class="active">
-              <a href="index.html" class="fa fa-home"> Home</a>
+              <a href="index.html"> Home</a>
             </li>
-            <li><a href="about.html" class="fa fa-book"> About</a></li>
+            <li><a href="about.html"> About</a></li>
             <li>
-              <a href="community.html" class="fa fa-universal-access">
-                Community</a
-              >
+              <a href="community.html"> Community</a>
             </li>
           </ul>
           <label id="icon">
@@ -122,7 +102,7 @@
             </div>
             <br />
             <div class="links">
-              <a class="ahref" href="https://discord.gg/cs50" target="_blank"
+              <a class="button" href="https://discord.gg/cs50" target="_blank"
                 >Click Here To Join Now</a
               >
             </div>
@@ -145,7 +125,7 @@
             <br />
             <div class="links">
               <a
-                class="ahref"
+                class="button"
                 href="https://www.reddit.com/r/cs50/"
                 target="_blank"
                 >Click Here To Join Now</a
@@ -261,5 +241,6 @@
         </div>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
