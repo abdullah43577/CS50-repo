@@ -456,7 +456,7 @@ footer .footer-container {
 }
 
 /* Mobile optimization of the homepage */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   header .cs50x li {
     font-size: 32px;
     padding-left: 40px;
@@ -631,7 +631,7 @@ footer .footer-container {
 }
 
 /* Mobile optimization of the about page */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .button {
     font-size: 12px;
     padding: 10px;
@@ -745,7 +745,7 @@ div.answer {
 
 /* optimized version for the communities page */
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .image {
     width: 320px;
   }
