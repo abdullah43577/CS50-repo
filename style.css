@@ -781,4 +781,13 @@ div.answer {
   .read-more-container {
     flex-direction: column;
   }
+
+  .image-container {
+    display: none;
+  }
+
+  .copyright {
+    margin-left: 0px;
+    text-align: center;
+  }
 }
