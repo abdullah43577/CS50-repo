@@ -18,10 +18,6 @@ body {
   background-size: cover;
 }
 
-.clr {
-  clear: both;
-}
-
 a {
   color: rgb(238, 92, 92);
 }
@@ -51,7 +47,6 @@ header nav {
 }
 
 header nav .cs50x {
-  /* float: left; */
   display: flex;
   justify-content: start;
   align-items: center;
@@ -63,7 +58,7 @@ header nav .cs50x {
 
 span {
   font-style: italic;
-  color: coral;
+  color: red;
 }
 
 header .cs50x li {
@@ -102,16 +97,16 @@ header .nav li {
 .nav a.active {
   border-radius: 5px;
   padding: 10px;
-  background: coral;
+  background: hsl(244, 38%, 16%);
   border: none;
 }
 
 .nav li a:hover {
-  background-color: coral;
+  background-color: hsl(244, 38%, 16%);
   padding: 10px;
   border-radius: 5px;
   border: none;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s ease-out;
 }
 
 nav #icon {
@@ -129,13 +124,13 @@ nav #icon {
   display: flex;
   font-size: 30px;
   text-align: center;
-  margin-top: 200px;
+  height: 85vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .mid-sec {
   width: 100%;
-  justify-content: center;
-  align-items: center;
   margin: 10px;
 }
 
@@ -143,9 +138,10 @@ nav #icon {
   /* word-wrap: break-word; */
   text-align: center;
   text-transform: capitalize;
-  color: coral;
+  color: #f3f3f3;
   font-weight: bold;
   margin-bottom: 30px;
+  font-size: 40px;
 }
 
 em {
@@ -169,7 +165,7 @@ em {
 }
 
 .btn1 {
-  background-color: red;
+  background-color: hsl(244, 38%, 16%);
 }
 
 .btn2 {
@@ -177,8 +173,9 @@ em {
 }
 
 .btn2:hover {
-  background-color: red;
+  background-color: hsl(244, 38%, 16%);
   transition: 0.5s ease-in-out;
+  border: none;
 }
 
 /* End of header section */
@@ -281,8 +278,12 @@ em {
   text-transform: capitalize;
   border-style: none;
   border-radius: 10px;
-  background-color: rgb(53, 46, 46);
+  background-color: hsl(244, 38%, 16%);
   box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+#read-more:hover {
+  color: #f3f3f3;
 }
 
 .about-us h2,
@@ -368,14 +369,18 @@ aside h2 {
 }
 
 .about-us .paragraph1 {
-  width: 50%;
-  float: left;
+  width: 70%;
 }
 
 .main-logo {
   max-width: 200px;
-  float: right;
   border-radius: 40px;
+}
+
+.read-more-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .names {
@@ -414,11 +419,12 @@ aside h2 {
 footer .footer-container {
   margin-top: 8px;
   display: flex;
-  background-color: rgb(252, 94, 94);
+  background-color: hsl(244, 38%, 16%);
   width: 100%;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  color: #f3f3f3;
 }
 
 .image-container {
@@ -504,7 +510,6 @@ footer .footer-container {
   }
 
   .about-us .paragraph1 {
-    float: none;
     width: 100%;
     padding-top: 10px;
   }
@@ -519,7 +524,7 @@ footer .footer-container {
   }
 
   .mid-sec p {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .courses {
@@ -771,5 +776,9 @@ div.answer {
 
   .fa-wrapper-cont {
     width: 300px;
+  }
+
+  .read-more-container {
+    flex-direction: column;
   }
 }
