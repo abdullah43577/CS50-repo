@@ -16,6 +16,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: url("./images/BG.jpg") no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 a {
@@ -293,12 +294,19 @@ em {
   text-align: center;
 }
 
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 sup {
   font-weight: bold;
 }
 
 .lecturers {
-  margin: 20px 50px;
+  margin: 20px 0px;
 
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
@@ -312,6 +320,7 @@ sup {
   color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 5px #aaaaaa;
+  width: 400px;
 }
 
 .t1 {
@@ -354,9 +363,9 @@ aside h2 {
 .text-container {
   line-height: 22px;
   font-family: "Montserrat", sans-serif;
-  font-style: italic;
   text-align: center;
-  padding: 1.5rem;
+  padding: 10px 0px;
+  font-size: 15px;
 }
 
 .span-logo {
@@ -370,6 +379,7 @@ aside h2 {
 
 .about-us .paragraph1 {
   width: 70%;
+  line-height: 22px;
 }
 
 .main-logo {
@@ -461,7 +471,7 @@ footer .footer-container {
 }
 
 /* Mobile optimization of the homepage */
-@media (max-width: 850px) {
+@media (max-width: 880px) and (orientation: portrait) {
   header .cs50x li {
     font-size: 32px;
     padding-left: 40px;
@@ -520,7 +530,7 @@ footer .footer-container {
   footer .footer-container {
     margin-top: 2px;
     margin-bottom: 0px;
-    height: 20px;
+    height: 40px;
   }
 
   .mid-sec p {
@@ -553,7 +563,8 @@ footer .footer-container {
       "t1"
       "t2"
       "t3";
-    margin: 20px;
+    margin: 0;
+    margin-bottom: 20px;
   }
 
   .text-container {
@@ -636,10 +647,9 @@ footer .footer-container {
 }
 
 /* Mobile optimization of the about page */
-@media (max-width: 850px) {
+@media (max-width: 880px) and (orientation: portrait) {
   .button {
     font-size: 12px;
-    padding: 10px;
   }
 
   .content-section h2 {
@@ -701,34 +711,32 @@ footer .footer-container {
 /* FAQ Section */
 
 .faq-cont {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #aaaaaa;
+  width: 800px;
+  margin-inline: auto;
+  color: hsl(237, 12%, 33%);
 }
 
-.classic h2 {
+.faq-cont h2 {
   margin: 20px;
   text-align: center;
+  color: hsl(238, 29%, 16%);
 }
 
 .fa-wrapper-cont {
-  height: auto;
-  width: 700px;
-  background-color: #f3f3f3;
-  color: black;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  padding: 20px 0px;
+  border-bottom: 1px solid hsl(244, 38%, 16%);
 }
 
 div.question {
-  /* margin-bottom: 10px; */
-  border-bottom: 1px solid black;
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+div.question:hover {
+  color: hsl(244, 38%, 16%);
+  cursor: pointer;
 }
 
 div.question i {
@@ -737,7 +745,10 @@ div.question i {
 
 div.answer {
   margin-top: 10px;
-  padding: 20px;
+}
+
+div.answer p {
+  line-height: 25px;
 }
 
 .question i {
@@ -750,7 +761,7 @@ div.answer {
 
 /* optimized version for the communities page */
 
-@media (max-width: 850px) {
+@media (max-width: 880px) and (orientation: portrait) {
   .image {
     width: 320px;
   }
@@ -774,10 +785,6 @@ div.answer {
     margin: 10px 20px;
   }
 
-  .fa-wrapper-cont {
-    width: 300px;
-  }
-
   .read-more-container {
     flex-direction: column;
   }
@@ -789,5 +796,23 @@ div.answer {
   .copyright {
     margin-left: 0px;
     text-align: center;
+  }
+
+  .lecturers-section {
+    width: 300px;
+    margin-inline: auto;
+  }
+
+  .faq-cont {
+    width: 300px;
+  }
+
+  .names {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .hd img {
+    width: 30px;
   }
 }
