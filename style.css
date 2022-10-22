@@ -16,7 +16,7 @@ body {
   font-family: "Roboto", sans-serif;
   background: url("./images/BG.jpg") no-repeat;
   background-size: cover;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 a {
