@@ -242,12 +242,12 @@ em {
 }
 
 .box-container {
-  background-color: coral;
   color: white;
   border-radius: 10px;
   padding: 1.5rem;
   box-shadow: 10px 10px 5px #aaaaaa;
   background-color: hsl(244, 38%, 16%);
+  line-height: 25px;
 }
 
 .box-container h2 {
@@ -383,7 +383,7 @@ aside h2 {
 
 .about-us .paragraph1 {
   width: 70%;
-  line-height: 22px;
+  line-height: 25px;
 }
 
 .main-logo {
@@ -406,6 +406,7 @@ aside h2 {
 
 .take-course {
   margin-top: 40px;
+  line-height: 25px;
 }
 
 .take-course p {
